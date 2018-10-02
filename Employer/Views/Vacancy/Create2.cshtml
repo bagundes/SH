@@ -1,0 +1,153 @@
+﻿
+@{
+    ViewData["Title"] = "Create2";
+}
+
+@section Styles {
+    <style>
+        .items {
+            list-style-type: none;
+        }
+    </style>
+}
+<div class="row">
+    <div class="col-3">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Java Develop Engineer</h3>
+                <h4 class="card-title">Contract type Indetermined</h4>
+                <p class="card-text">
+                    <ul>
+                        <li class="">Salary: 35,000.00€ to 45,000.00€</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-9">
+        <p>
+            In this page is possible you select the skills necessary to job, just only
+        </p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-3">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Skills Available</h3>
+                <p class="card-text">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search for...">
+                        <div class="input-group-append">
+                            <button class="btn btn-info" type="button">Add</button>
+                        </div>
+                    </div>
+                    <ul class="items">
+                        <li class="btn-rounded btn-outline-success">Java SE</li>
+                        <li class="btn-rounded btn-outline-success">Tomcat</li>
+                        <li class="btn-rounded btn-outline-success">CSS</li>
+                        <li class="btn-rounded btn-outline-success">HTML</li>
+                        <li class="btn-rounded btn-outline-success">Javascript</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-3">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Knowledge</h3>
+                <p class="card-text">
+                    <ul class="items">
+                        <li></li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-3">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Experiente</h3>
+                <p class="card-text">
+                    <ul class="items">
+                        <li class="btn-rounded btn-outline-success">Java SE</li>
+                        <li class="btn-rounded btn-outline-success">Tomcat</li>
+                        <li class="btn-rounded btn-outline-success">CSS</li>
+                        <li class="btn-rounded btn-outline-success">HTML</li>
+                        <li class="btn-rounded btn-outline-success">Javascript</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-3">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Differential</h3>
+                <p class="card-text">
+                    <ul class="items">
+                        <li class="btn-rounded btn-outline-success" class="btn btn-rounded btn-outline-success">Java SE</li>
+                        <li class="btn-rounded btn-outline-success">Tomcat</li>
+                        <li class="btn-rounded btn-outline-success">CSS</li>
+                        <li class="btn-rounded btn-outline-success">HTML</li>
+                        <li class="btn-rounded btn-outline-success">Javascript</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(function () {
+            $(".items").sortable({
+                connectWith: ".items",
+                placeholder: "ui-state-highlight",
+                receive: function (event, ui) {
+                    alert("qwerty");
+                }
+
+            });
+            $(".items").disableSelection();
+        });
+                /*
+                    $( function() {
+                        $(".items").sortable({
+                            alert("teste");
+
+                connectWith: ".items",
+                    receive: function (event, ui) {
+                        alert("dsadas");
+                        var id_origem = ui.sender.attr("id"),
+                            id_clicado = ui.item.attr("id"),
+                            id_destino = $(this).attr("id");
+
+                        let token = $('[name=__RequestVerificationToken]').val();
+                        let headers = {};
+                        headers['RequestVerificationToken'] = token;
+
+                        var val = { Name: id_clicado, Level: id_destino};
+                        val = JSON.stringify(val);
+                        $.ajax({
+
+                            url: '/Requests/UpdateSkill',
+                            type: 'POST',
+                            contentType: 'application/json',
+                            headers: headers,
+                            data: val,
+                        }).done(function (response) {
+                            console.log(response);
+
+                        }).fail(function(data) {
+                            alert(data.statusText);
+                        });
+
+                        alert("Id origem="+id_origem+" | Id clicado="+id_clicado+" | Id destino="+id_destino);
+
+                    }
+                }).disableSelection();
+            });*/
+    </script>
+}

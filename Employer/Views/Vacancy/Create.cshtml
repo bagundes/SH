@@ -1,0 +1,127 @@
+﻿
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Type of Contract</h4>
+                <div class="btn-group" data-toggle="buttons">
+                    <label class="btn btn-primary">
+                        <input type="radio" name="options" id="option1" autocomplete="off" checked> Indetermined
+                    </label>
+                    <label class="btn btn-primary">
+                        <input type="radio" name="options" id="option2" autocomplete="off"> Contract
+                    </label>
+                    <label class="btn btn-primary">
+                        <input type="radio" name="options" id="option3" autocomplete="off"> Intern
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Which category?</h4>
+                <div class="btn-group" data-toggle="buttons">
+                    <label class="btn btn-primary">
+                        <input type="radio" name="options" id="option1" autocomplete="off" checked> Develop Engineer
+                    </label>
+                    <label class="btn btn-primary">
+                        <input type="radio" name="options" id="option2" autocomplete="off"> Networking Engineer
+                    </label>
+                    <label class="btn btn-primary">
+                        <input type="radio" name="options" id="option3" autocomplete="off"> Web Design
+                    </label>
+                    <label class="btn btn-primary">
+                        <input type="radio" name="options" id="option3" autocomplete="off"> Other
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Type of Profile?</h4>
+                <div class="btn-group" data-toggle="buttons">
+                    <label class="btn btn-primary">
+                        <input type="radio" name="options" id="option1" autocomplete="off" checked> Java Developer
+                    </label>
+                    <label class="btn btn-primary">
+                        <input type="radio" name="options" id="option2" autocomplete="off"> .Net Developer
+                    </label>
+                    <label class="btn btn-primary">
+                        <input type="radio" name="options" id="option3" autocomplete="off"> PHP Developer
+                    </label>
+                    <label class="btn btn-primary">
+                        <input type="radio" name="options" id="option3" autocomplete="off"> 4
+                    </label>
+                    <label class="btn btn-primary">
+                        <input type="radio" name="options" id="option3" autocomplete="off"> 5
+                    </label>
+                    <label class="btn btn-primary">
+                        <input type="radio" name="options" id="option3" autocomplete="off"> +5
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">How many staff do you want to contract?</h4>
+                <div class="btn-group" data-toggle="buttons">
+                    <label class="btn btn-primary">
+                        <input type="radio" name="options" id="option1" autocomplete="off" checked> 1
+                    </label>
+                    <label class="btn btn-primary">
+                        <input type="radio" name="options" id="option2" autocomplete="off"> 2
+                    </label>
+                    <label class="btn btn-primary">
+                        <input type="radio" name="options" id="option3" autocomplete="off"> 3
+                    </label>
+                    <label class="btn btn-primary">
+                        <input type="radio" name="options" id="option3" autocomplete="off"> 4
+                    </label>
+                    <label class="btn btn-primary">
+                        <input type="radio" name="options" id="option3" autocomplete="off"> 5
+                    </label>
+                    <label class="btn btn-primary">
+                        <input type="radio" name="options" id="option3" autocomplete="off"> +5
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Salary (per annual)? </h4>
+                <p class="card-text">
+                    <div class="row">
+                        <div class="col-5">
+                            <div class="input-group">
+                                <input type="number" class="form-control" placeholder="Value min" aria-describedby="basic-addon2">
+                                <div class="input-group-append">
+                                    <span class="input-group-text" id="basic-addon2">.00€</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1">to</div>
+                        <div class="col-5">
+                                <div class="input-group">
+                                    <input type="number" class="form-control" placeholder="Value max" aria-describedby="basic-addon2">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text" id="basic-addon2">.00€</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <a asp-action="Create2" class="btn btn-info">Next</a>
+    </div>
+</div>
+

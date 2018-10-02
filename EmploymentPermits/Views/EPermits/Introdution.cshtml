@@ -1,0 +1,33 @@
+﻿@{
+    Layout = "_MainLayout";
+    ViewData["Title"] = "Create";
+}
+
+@model Mind.Models.EPermitions.IntrodutionModel;
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title" id="1">1. Introdution Form</h4>
+                <form class="form-material m-t-40" asp-action="Introdution" method="POST">
+                    <div class="form-group">
+                        <label>
+                            1. Who is the Applicant:
+                            <span class="help"> e.g. "George deo"</span>
+                        </label>
+                        <input type="text" class="form-control form-control-line" asp-for="@Model.Applicant1">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            2. Are you an Agent acting for the Applicant:
+                            <span class="help"> e.g. "George deo"</span>
+                        </label>
+                        <input type="text" class="form-control form-control-line" asp-for="@Model.Agent2">
+                    </div>
+                    <input type="submit" class="btn btn-success" value="Next (2/6)" />
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,32 @@
+﻿@{
+    Layout = "_MainLayout";
+    ViewData["Title"] = "Create";
+}
+
+@model Mind.Models.EPermitions.DetailsRedundancyModel;
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title" id="1">4. Details of Redundancy</h4>
+                <form class="form-material m-t-40" asp-action="DetailsRedundancy" method="POST">
+                    <div class="form-group">
+                        <label>
+                            1. Have any employees of the Person
+                            who has made the offer of
+                            employment, the Connected Person or
+                            the Relevant Person been made
+                            redundant in the employment that is
+                            the subject of this Employment Permit
+                            application over the last six months?:
+                            <span class="help"> e.g. "George deo"</span>
+                        </label>
+                        <input class="form-control form-control-line" asp-for="@Model.EmployeerPerson1">
+                    </div>
+                    <input type="submit" class="btn btn-success" value="Next (5/6)" />
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

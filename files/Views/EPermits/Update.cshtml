@@ -1,0 +1,42 @@
+﻿@{
+    Layout = "_MainLayout";
+    ViewData["Title"] = "";
+}
+
+@model EmploymentPermits.Models.ListFormViewModel;
+
+<table id="example23" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
+    <thead>
+        <tr>
+            <th>Talent</th>
+            <th>Company</th>
+            <th>Create At</th>
+            <th>Status</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+    </tfoot>
+    <tbody>
+        @{ foreach (var line in Model.Grid)
+            {
+                <tr>
+                    <td>@line.Talent</td>
+                    <td>@line.Company</td>
+                    <td>@line.Created</td>
+                    <td>@line.Status</td>
+                    <td><a class="">Delete</a></td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+
+

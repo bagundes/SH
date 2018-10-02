@@ -1,0 +1,214 @@
+﻿@{
+    Layout = "_MainLayout";
+    ViewData["Title"] = "Create";
+}
+
+@model Mind.Models.EPermitions.RegistrationDetailsModel;
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title" id="1">2. Registration Details</h4>
+                <form class="form-material m-t-40" asp-action="RegistrationDetails" method="POST">
+                    <div class="form-group">
+                        <label>
+                            1. Employer Registered Number:
+                            <span class="help"> e.g. "George deo"</span>
+                        </label>
+                        <input type="text" class="form-control form-control-line" asp-for="@Model.EmployerRegNumber1">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            2. Company Name Registered Number (if applicable):
+                            <span class="help"> e.g. "George deo"</span>
+                        </label>
+                        <input type="text" class="form-control form-control-line" asp-for="@Model.CompanyRegNumber2">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            3. Business Name Registered Number (if applicable):
+                            <span class="help"> e.g. "George deo"</span>
+                        </label>
+                        <input type="text" class="form-control form-control-line" asp-for="@Model.BusinessRegdNumber3">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            4. If the Person who has made the offer supply the Charity Number:
+                            <span class="help"> e.g. "George deo"</span>
+                        </label>
+                        <input type="text" class="form-control form-control-line" asp-for="@Model.CharityNumber4">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            5. If the Person who has made the offer
+                            of employment is an Industrial and
+                            Provident Society, a Friendly Society
+                            or a Trade Union, please supply their
+                            Registration Number:
+                            <span class="help"> e.g. "George deo"</span>
+                        </label>
+                        <input type="text" class="form-control form-control-line" asp-for="@Model.SocietyRegNumber5">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            6. Is the Person who has made the offer
+                            of employment a Limited Company?:
+                            <span class="help"> e.g. "George deo"</span>
+                        </label>
+                        <input type="text" class="form-control form-control-line" asp-for="@Model.LimitedCompany6">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            7. Registered Name of
+                            Company/Business:
+                            <span class="help"> e.g. "George deo"</span>
+                        </label>
+                        <input type="text" class="form-control form-control-line" asp-for="@Model.NameCompany7">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            8. Trading Name of Business (if
+                            different):
+                            <span class="help"> e.g. "George deo"</span>
+                        </label>
+                        <input type="text" class="form-control form-control-line" asp-for="@Model.TradingName8">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            9. Nature of Business:
+                            <span class="help"> e.g. "George deo"</span>
+                        </label>
+                        <input type="text" class="form-control form-control-line" asp-for="@Model.NatureBusiness9">
+                    </div>
+                    <h6>10. Company/Business Address:</h6>
+                    <div class="form-group">
+                        <label>
+                            Address 1:
+                            <span class="help"> e.g. "George deo"</span>
+                        </label>
+                        <input type="text" class="form-control form-control-line" asp-for="@Model.Address110">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            Address 2:
+                            <span class="help"> e.g. "George deo"</span>
+                        </label>
+                        <input type="text" class="form-control form-control-line" asp-for="@Model.Address210">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            Town:
+                            <span class="help"> e.g. "George deo"</span>
+                        </label>
+                        <input type="text" class="form-control form-control-line" asp-for="@Model.Town10">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            Postcode/Eircode:
+                            <span class="help"> e.g. "George deo"</span>
+                        </label>
+                        <input type="text" class="form-control form-control-line" asp-for="@Model.Postcode10">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            Country:
+                            <span class="help"> e.g. "George deo"</span>
+                        </label>
+                        <input type="text" class="form-control form-control-line" asp-for="@Model.Country10">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            Telephone Number:
+                            <span class="help"> e.g. "George deo"</span>
+                        </label>
+                        <input type="text" class="form-control form-control-line" asp-for="@Model.PhoneNumber10">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            Mobile Phone Number:
+                            <span class="help"> e.g. "George deo"</span>
+                        </label>
+                        <input type="text" class="form-control form-control-line" asp-for="@Model.MobileNumber10">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            E-mail address:
+                            <span class="help"> e.g. "George deo"</span>
+                        </label>
+                        <input type="text" class="form-control form-control-line" asp-for="@Model.Email10">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            11. Number of EEA* and/or Swiss
+                            nationals (including Irish) currently
+                            employed by the Person who has
+                            made the offer of employment:
+                            <span class="help"> e.g. "George deo"</span>
+                        </label>
+                        <input type="text" class="form-control form-control-line" asp-for="@Model.EEA11">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            12. Number of non-EEA nationals
+                            currently employed by the Person who
+                            has made the offer of employment:
+                            <span class="help"> e.g. "George deo"</span>
+                        </label>
+                        <input type="text" class="form-control form-control-line" asp-for="@Model.NoEEA12">
+                    </div>
+                    <h6>
+                        13. Please provide details of a person, within the company who is authorised to deal with any queries arising
+                        from this application and future applications for Employment Permits (person must be employed within
+                        the company, agent details to be provided elsewhere)
+                    </h6>
+                    <div class="form-group">
+                        <label>
+                            Title:
+                            <span class="help"> e.g. "George deo"</span>
+                        </label>
+                        <input type="text" class="form-control form-control-line" asp-for="@Model.Title13">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            Name:
+                            <span class="help"> e.g. "George deo"</span>
+                        </label>
+                        <input type="text" class="form-control form-control-line" asp-for="@Model.Name13">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            Position Held in company:
+                            <span class="help"> e.g. "George deo"</span>
+                        </label>
+                        <input type="text" class="form-control form-control-line" asp-for="@Model.Position13">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            Telephone Number:
+                            <span class="help"> e.g. "George deo"</span>
+                        </label>
+                        <input type="text" class="form-control form-control-line" asp-for="@Model.Phone13">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            Mobile Phone Number:
+                            <span class="help"> e.g. "George deo"</span>
+                        </label>
+                        <input type="text" class="form-control form-control-line" asp-for="@Model.Mobile13">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            E-mail address:
+                            <span class="help"> e.g. "George deo"</span>
+                        </label>
+                        <input type="text" class="form-control form-control-line" asp-for="@Model.Email13">
+                    </div>
+
+
+                    <input type="submit" class="btn btn-success" value="Next (3/6)" />
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,71 @@
+﻿@{
+    ViewData["Module"] = "Perfil";
+    ViewData["Title"] = "Company";
+}
+
+@model Mind.Models.Companies.CompanyModel;
+
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Register Company</h4>
+                <h6 class="card-subtitle">Data the company</h6>
+                <form asp-action="Company" method="POST" class="form-material m-t-40 row">
+                    <input asp-for="@Model.Unique" hidden class="form-control" placeholder="">
+
+                    <div class="form-group col-md-6 m-t-20">
+                        <label asp-for="@Model.Name">Company name</label>
+                        <input asp-for="@Model.Name" class="form-control" placeholder="">
+                    </div>
+                    <div class="form-group col-md-6 m-t-20">
+                        <label asp-for="@Model.Site">Site</label>
+                        <input asp-for="@Model.Site" class="form-control" placeholder="ex. http://www.exemple.com">
+                    </div>
+                    <div class="form-group col-md-6 m-t-20">
+                        <label asp-for="@Model.Email">Email <span class="help"> for our contato</span></label>
+                        <input asp-for="@Model.Email" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="form-group col-md-6 m-t-20">
+                        <label asp-for="@Model.PhoneNumber">Phone Number <span class="help"></span></label>
+                        <input asp-for="@Model.PhoneNumber" class="form-control" placeholder="">
+                    </div>
+                    <div class="form-group col-md-4 m-t-20">
+                        <label asp-for="@Model.RegisterNumber">CRO Number/CNPJ</label>
+                        <input asp-for="@Model.RegisterNumber" class="form-control" placeholder="Inform CRO number or CNPJ (Brazil)">
+                    </div>
+                    <div class="form-group col-md-8 m-t-20">
+                        <label asp-for="@Model.NatureBusiness">Nature Business</label>
+                        <input asp-for="@Model.NatureBusiness" class="form-control" placeholder="Exemple Software house">
+                    </div>
+                    <div class="form-group col-md-6 m-t-20">
+                        <label asp-for="@Model.Address1">Address 1</label>
+                        <input asp-for="@Model.Address1" class="form-control" placeholder="Exemple Software house">
+                    </div>
+                    <div class="form-group col-md-6 m-t-20">
+                        <label asp-for="@Model.Address2">Address 2</label>
+                        <input asp-for="@Model.Address2" class="form-control" placeholder="Exemple Software house">
+                    </div>
+                    <div class="form-group col-md-6 m-t-20">
+                        <label asp-for="@Model.City">City</label>
+                        <input asp-for="@Model.City" class="form-control" placeholder="Inform the City">
+                    </div>
+                    <div class="form-group col-md-6 m-t-20">
+                        <label asp-for="@Model.Postcode">Post Code</label>
+                        <input asp-for="@Model.Postcode" class="form-control" placeholder="Post Code/Zipcode">
+                    </div>
+                    <div class="form-group col-md-6 m-t-20">
+                        <label asp-for="@Model.CountryId">Country</label>
+                        <input asp-for="@Model.CountryId" class="form-control" placeholder="Country">
+                    </div>
+                    <div class="form-group col-md-6 m-t-20">
+                        <button type="submit" class="btn btn-success waves-effect waves-light m-r-10">Update</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+

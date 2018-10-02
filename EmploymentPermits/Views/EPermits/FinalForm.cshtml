@@ -1,0 +1,482 @@
+﻿
+@{
+    Layout = null;
+    ViewData["Title"] = "FinalForm";
+}
+
+@model Mind.Models.EPermitions.FinalReportModelView;
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="StarProof">
+    <meta name="author" content="Bruno Fagundes">
+    <title>SH365</title>
+    <link href="~/css/FinalForm.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Critical Skills Employment Permit</h1>
+    <p>
+        This form should be used by either the Person who has made the offer of employment or the Foreign National, the
+        subject of that offer of employment, who wish to apply for:
+        <ul>
+            <li>
+                an employment permit for an employment in respect of which there is a shortage in respect of the relevant
+                qualifications, experience or skills which are required for the proper functioning of the economy and which
+                employments are listed in Schedule 3 in the Principal Regulations, as amended, or
+            </li>
+            <li>
+                all other employments with an annual remuneration of €60,000 or more, other than those employments for which an
+                employment permit shall not be granted and which employments are listed in Schedule 4 in the Principal
+                Regulations, as amended.
+            </li>
+        </ul>
+        For permission to work in the State for a period of less than 90 days, the Atypical Working Schemeoperated by the
+        Department of Justice and Equality may be appropriate.
+        Before completing this form, please read the relevant permit information which is available on our website at
+        https://www.djei.ie/en/What-We-Do/Jobs-Workplace-and-Skills/Employment-Permits/Permit-Types/Critical-Skills-
+        Employment-Permit/.
+    </p>
+
+    <h2>Introdution Form</h2>
+    <div class="form-group-sh">
+        <label>
+            1. Who is the Applicant:
+
+        </label>
+        <input type="text" class="form-control form-control-line" asp-for="@Model.oIntrodutionModel.Applicant1">
+    </div>
+    <div class="form-group-sh">
+        <label>
+            2. Are you an Agent acting for the Applicant:
+
+        </label>
+        <input type="text" class="form-control form-control-line" asp-for="@Model.oIntrodutionModel.Agent2">
+    </div>
+    <h2>2. Registration Details</h2>
+    <div class="form-group-sh">
+        <label>
+            1. Employer Registered Number:
+
+        </label>
+        <input type="text" class="form-control form-control-line" asp-for="@Model.oRegistrationDetailsModel.EmployerRegNumber1">
+    </div>
+    <div class="form-group-sh">
+        <label>
+            2. Company Name Registered Number (if applicable):
+
+        </label>
+        <input type="text" class="form-control form-control-line" asp-for="@Model.oRegistrationDetailsModel.CompanyRegNumber2">
+    </div>
+    <div class="form-group-sh">
+        <label>
+            3. Business Name Registered Number (if applicable):
+
+        </label>
+        <input type="text" class="form-control form-control-line" asp-for="@Model.oRegistrationDetailsModel.BusinessRegdNumber3">
+    </div>
+    <div class="form-group-sh">
+        <label>
+            4. If the Person who has made the offer supply the Charity Number:
+
+        </label>
+        <input type="text" class="form-control form-control-line" asp-for="@Model.oRegistrationDetailsModel.CharityNumber4">
+    </div>
+    <div class="form-group-sh">
+        <label>
+            5. If the Person who has made the offer
+            of employment is an Industrial and
+            Provident Society, a Friendly Society
+            or a Trade Union, please supply their
+            Registration Number:
+
+        </label>
+        <input type="text" class="form-control form-control-line" asp-for="@Model.oRegistrationDetailsModel.SocietyRegNumber5">
+    </div>
+    <div class="form-group-sh">
+        <label>
+            6. Is the Person who has made the offer
+            of employment a Limited Company?:
+
+        </label>
+        <input type="text" class="form-control form-control-line" asp-for="@Model.oRegistrationDetailsModel.LimitedCompany6">
+    </div>
+    <div class="form-group-sh">
+        <label>
+            7. Registered Name of
+            Company/Business:
+
+        </label>
+        <input type="text" class="form-control form-control-line" asp-for="@Model.oRegistrationDetailsModel.NameCompany7">
+    </div>
+    <div class="form-group-sh">
+        <label>
+            8. Trading Name of Business (if
+            different):
+
+        </label>
+        <input type="text" class="form-control form-control-line" asp-for="@Model.oRegistrationDetailsModel.TradingName8">
+    </div>
+    <div class="form-group-sh">
+        <label>
+            9. Nature of Business:
+
+        </label>
+        <input type="text" class="form-control form-control-line" asp-for="@Model.oRegistrationDetailsModel.NatureBusiness9">
+    </div>
+    <h6>10. Company/Business Address:</h6>
+    <div class="form-group-sh">
+        <label>
+            Address 1:
+
+        </label>
+        <input type="text" class="form-control form-control-line" asp-for="@Model.oRegistrationDetailsModel.Address110">
+    </div>
+    <div class="form-group-sh">
+        <label>
+            Address 2:
+
+        </label>
+        <input type="text" class="form-control form-control-line" asp-for="@Model.oRegistrationDetailsModel.Address210">
+    </div>
+    <div class="form-group-sh">
+        <label>
+            Town:
+
+        </label>
+        <input type="text" class="form-control form-control-line" asp-for="@Model.oRegistrationDetailsModel.Town10">
+    </div>
+    <div class="form-group-sh">
+        <label>
+            Postcode/Eircode:
+
+        </label>
+        <input type="text" class="form-control form-control-line" asp-for="@Model.oRegistrationDetailsModel.Postcode10">
+    </div>
+    <div class="form-group-sh">
+        <label>
+            Country:
+
+        </label>
+        <input type="text" class="form-control form-control-line" asp-for="@Model.oRegistrationDetailsModel.Country10">
+    </div>
+    <div class="form-group-sh">
+        <label>
+            Telephone Number:
+
+        </label>
+        <input type="text" class="form-control form-control-line" asp-for="@Model.oRegistrationDetailsModel.PhoneNumber10">
+    </div>
+    <div class="form-group-sh">
+        <label>
+            Mobile Phone Number:
+
+        </label>
+        <input type="text" class="form-control form-control-line" asp-for="@Model.oRegistrationDetailsModel.MobileNumber10">
+    </div>
+    <div class="form-group-sh">
+        <label>
+            E-mail address:
+
+        </label>
+        <input type="text" class="form-control form-control-line" asp-for="@Model.oRegistrationDetailsModel.Email10">
+    </div>
+    <div class="form-group-sh">
+        <label>
+            11. Number of EEA* and/or Swiss
+            nationals (including Irish) currently
+            employed by the Person who has
+            made the offer of employment:
+
+        </label>
+        <input type="text" class="form-control form-control-line" asp-for="@Model.oRegistrationDetailsModel.EEA11">
+    </div>
+    <div class="form-group-sh">
+        <label>
+            12. Number of non-EEA nationals
+            currently employed by the Person who
+            has made the offer of employment:
+
+        </label>
+        <input type="text" class="form-control form-control-line" asp-for="@Model.oRegistrationDetailsModel.NoEEA12">
+    </div>
+    <h6>
+        13. Please provide details of a person, within the company who is authorised to deal with any queries arising
+        from this application and future applications for Employment Permits (person must be employed within
+        the company, agent details to be provided elsewhere)
+    </h6>
+    <div class="form-group-sh">
+        <label>
+            Title:
+
+        </label>
+        <input type="text" class="form-control form-control-line" asp-for="@Model.oRegistrationDetailsModel.Title13">
+    </div>
+    <div class="form-group-sh">
+        <label>
+            Name:
+
+        </label>
+        <input type="text" class="form-control form-control-line" asp-for="@Model.oRegistrationDetailsModel.Name13">
+    </div>
+    <div class="form-group-sh">
+        <label>
+            Position Held in company:
+
+        </label>
+        <input type="text" class="form-control form-control-line" asp-for="@Model.oRegistrationDetailsModel.Position13">
+    </div>
+    <div class="form-group-sh">
+        <label>
+            Telephone Number:
+
+        </label>
+        <input type="text" class="form-control form-control-line" asp-for="@Model.oRegistrationDetailsModel.Phone13">
+    </div>
+    <div class="form-group-sh">
+        <label>
+            Mobile Phone Number:
+
+        </label>
+        <input type="text" class="form-control form-control-line" asp-for="@Model.oRegistrationDetailsModel.Mobile13">
+    </div>
+    <div class="form-group-sh">
+        <label>
+            E-mail address:
+
+        </label>
+        <input type="text" class="form-control form-control-line" asp-for="@Model.oRegistrationDetailsModel.Email13">
+    </div>
+    <h2>3. Registration Details</h2>
+    <div class="form-group-sh">
+        <label>
+            1. Passport Number:
+
+        </label>
+        <input class="form-control form-control-line" asp-for="@Model.oDetailsOfForeignNationalModel.PassportNumber1">
+    </div>
+    <div class="form-group-sh">
+        <label>
+            2. Expiry Date:
+
+        </label>
+        <input class="form-control form-control-line" asp-for="@Model.oDetailsOfForeignNationalModel.ExpiryDate2">
+    </div>
+    <div class="form-group-sh">
+        <label>
+            3. National of:
+
+        </label>
+        <input class="form-control form-control-line" asp-for="@Model.oDetailsOfForeignNationalModel.National3">
+    </div>
+    <div class="form-group-sh">
+        <label>
+            4. Title:
+
+        </label>
+        <input class="form-control form-control-line" asp-for="@Model.oDetailsOfForeignNationalModel.Title4">
+    </div>
+    <div class="form-group-sh">
+        <label>
+            5. First Name:
+
+        </label>
+        <input class="form-control form-control-line" asp-for="@Model.oDetailsOfForeignNationalModel.FirstName5">
+    </div>
+    <div class="form-group-sh">
+        <label>
+            6. Middle Name(s):
+
+        </label>
+        <input class="form-control form-control-line" asp-for="@Model.oDetailsOfForeignNationalModel.MiddleName6">
+    </div>
+    <div class="form-group-sh">
+        <label>
+            7. Family Name:
+
+        </label>
+        <input class="form-control form-control-line" asp-for="@Model.oDetailsOfForeignNationalModel.FamilyName7">
+    </div>
+    <div class="form-group-sh">
+        <label>
+            8. Date of Birth:
+
+        </label>
+        <input class="form-control form-control-line" asp-for="@Model.oDetailsOfForeignNationalModel.DateOfBirth8">
+    </div>
+    <div class="form-group-sh">
+        <label>
+            9. Sex:
+
+        </label>
+        <input class="form-control form-control-line" asp-for="@Model.oDetailsOfForeignNationalModel.Sex9">
+    </div>
+    <h6>10. Current Address:</h6>
+    <div class="form-group-sh">
+        <label>
+            Address 1:
+
+        </label>
+        <input class="form-control form-control-line" asp-for="@Model.oDetailsOfForeignNationalModel.Address110">
+    </div>
+    <div class="form-group-sh">
+        <label>
+            Address 2:
+
+        </label>
+        <input class="form-control form-control-line" asp-for="@Model.oDetailsOfForeignNationalModel.Address210">
+    </div>
+    <div class="form-group-sh">
+        <label>
+            Town:
+
+        </label>
+        <input class="form-control form-control-line" asp-for="@Model.oDetailsOfForeignNationalModel.Town10">
+    </div>
+    <div class="form-group-sh">
+        <label>
+            Postcode/Eircode:
+
+        </label>
+        <input class="form-control form-control-line" asp-for="@Model.oDetailsOfForeignNationalModel.Postcode10">
+    </div>
+    <div class="form-group-sh">
+        <label>
+            Country:
+
+        </label>
+        <input class="form-control form-control-line" asp-for="@Model.oDetailsOfForeignNationalModel.Country10">
+    </div>
+    <div class="form-group-sh">
+        <label>
+            11. Telephone Number:
+
+        </label>
+        <input class="form-control form-control-line" asp-for="@Model.oDetailsOfForeignNationalModel.Phone11">
+    </div>
+    <div class="form-group-sh">
+        <label>
+            12. Mobile Phone Number:
+
+        </label>
+        <input class="form-control form-control-line" asp-for="@Model.oDetailsOfForeignNationalModel.MobilePhone12">
+    </div>
+    <div class="form-group-sh">
+        <label>
+            13. Please provide the Foreign National’s
+            PPS Number if available:
+
+        </label>
+        <input class="form-control form-control-line" asp-for="@Model.oDetailsOfForeignNationalModel.PPSNumber13">
+    </div>
+    <div class="form-group-sh">
+        <label>
+            14. Number of EEA* and/or Swiss
+            nationals (including Irish) currently
+            employed by the Person who has
+            made the offer of employment:
+
+        </label>
+        <input class="form-control form-control-line" asp-for="@Model.oDetailsOfForeignNationalModel.Email14">
+    </div>
+    <div class="form-group-sh">
+        <label>
+            15. Is the Foreign National currently in the
+            State?:
+
+        </label>
+        <input class="form-control form-control-line" asp-for="@Model.oDetailsOfForeignNationalModel.ForeignNational15">
+    </div>
+    <div class="form-group-sh">
+        <label>
+            16. Highest level of Qualification relevant
+            to the employment: e.g. Certificate,
+            Diploma, Degree, etc.:
+
+        </label>
+        <input class="form-control form-control-line" asp-for="@Model.oDetailsOfForeignNationalModel.HighestLevel16">
+    </div>
+    <div class="form-group-sh">
+        <label>
+            17. Has the Foreign National previously
+            made an application for asylum in the
+            State?:
+
+        </label>
+        <input class="form-control form-control-line" asp-for="@Model.oDetailsOfForeignNationalModel.ForeignNational17">
+    </div>
+    <div class="form-group-sh">
+        <label>
+            18. Has the Foreign National sought
+            permission to land in the State on a
+            previous occasion?:
+
+        </label>
+        <input class="form-control form-control-line" asp-for="@Model.oDetailsOfForeignNationalModel.ForeignNational18">
+    </div>
+    <div class="form-group-sh">
+        <label>
+            19. Has the Foreign National been in the
+            State on a previous occasion without
+            permission?:
+
+        </label>
+        <input class="form-control form-control-line" asp-for="@Model.oDetailsOfForeignNationalModel.ForeignNational19">
+    </div>
+    <div class="form-group-sh">
+        <label>
+            20. Is the Foreign National currently
+            employed in the State?:
+
+        </label>
+        <input class="form-control form-control-line" asp-for="@Model.oDetailsOfForeignNationalModel.ForeignNational20">
+    </div>
+    <div class="form-group-sh">
+        <label>
+            21. Has the Foreign National been
+            employed in the State previously?:
+
+        </label>
+        <input class="form-control form-control-line" asp-for="@Model.oDetailsOfForeignNationalModel.ForeignNational21">
+    </div>
+    <div class="form-group-sh">
+        <label>
+            22. Is the Foreign National married to, or in
+            a civil partnership with, an Irish or EEA
+            national?:
+
+        </label>
+        <input class="form-control form-control-line" asp-for="@Model.oDetailsOfForeignNationalModel.ForeignNational22">
+    </div>
+    <div class="form-group-sh">
+        <label>
+            23. Is the Foreign National the spouse,
+            civil partner or the dependant of, the
+            holder of an Employment Permit or the
+            holder of any other type of permission
+            to work in the State?:
+
+        </label>
+        <input class="form-control form-control-line" asp-for="@Model.oDetailsOfForeignNationalModel.ForeignNational23">
+    </div>
+    <h2>4. Details of Redundancy</h2>
+    <div class="form-group-sh">
+        <label>
+            1. Have any employees of the Person
+            who has made the offer of
+            employment, the Connected Person or
+            the Relevant Person been made
+            redundant in the employment that is
+            the subject of this Employment Permit
+            application over the last six months?:
+
+        </label>
+        <input class="form-control form-control-line" asp-for="@Model.oDetailsRedundancyModel.EmployeerPerson1">
+    </div>
+</body>
+</html>

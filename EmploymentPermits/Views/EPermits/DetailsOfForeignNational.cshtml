@@ -1,0 +1,231 @@
+﻿@{
+    Layout = "_MainLayout";
+    ViewData["Title"] = "Create";
+}
+
+@model Mind.Models.EPermitions.DetailsOfForeignNationalModel;
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title" id="1">3. Registration Details</h4>
+                <form class="form-material m-t-40" asp-action="DetailsOfForeignNational" method="POST">
+                    <div class="form-group">
+                        <label>
+                            1. Passport Number:
+                            <span class="help"> e.g. "George deo"</span>
+                        </label>
+                        <input class="form-control form-control-line" asp-for="@Model.PassportNumber1">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            2. Expiry Date:
+                            <span class="help"> e.g. "George deo"</span>
+                        </label>
+                        <input class="form-control form-control-line" asp-for="@Model.ExpiryDate2">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            3. National of:
+                            <span class="help"> e.g. "George deo"</span>
+                        </label>
+                        <input class="form-control form-control-line" asp-for="@Model.National3">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            4. Title:
+                            <span class="help"> e.g. "George deo"</span>
+                        </label>
+                        <input class="form-control form-control-line" asp-for="@Model.Title4">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            5. First Name:
+                            <span class="help"> e.g. "George deo"</span>
+                        </label>
+                        <input class="form-control form-control-line" asp-for="@Model.FirstName5">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            6. Middle Name(s):
+                            <span class="help"> e.g. "George deo"</span>
+                        </label>
+                        <input class="form-control form-control-line" asp-for="@Model.MiddleName6">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            7. Family Name:
+                            <span class="help"> e.g. "George deo"</span>
+                        </label>
+                        <input class="form-control form-control-line" asp-for="@Model.FamilyName7">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            8. Date of Birth:
+                            <span class="help"> e.g. "George deo"</span>
+                        </label>
+                        <input class="form-control form-control-line" asp-for="@Model.DateOfBirth8">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            9. Sex:
+                            <span class="help"> e.g. "George deo"</span>
+                        </label>
+                        <input class="form-control form-control-line" asp-for="@Model.Sex9">
+                    </div>
+                    <h6>10. Current Address:</h6>
+                    <div class="form-group">
+                        <label>
+                            Address 1:
+                            <span class="help"> e.g. "George deo"</span>
+                        </label>
+                        <input class="form-control form-control-line" asp-for="@Model.Address110">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            Address 2:
+                            <span class="help"> e.g. "George deo"</span>
+                        </label>
+                        <input class="form-control form-control-line" asp-for="@Model.Address210">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            Town:
+                            <span class="help"> e.g. "George deo"</span>
+                        </label>
+                        <input class="form-control form-control-line" asp-for="@Model.Town10">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            Postcode/Eircode:
+                            <span class="help"> e.g. "George deo"</span>
+                        </label>
+                        <input class="form-control form-control-line" asp-for="@Model.Postcode10">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            Country:
+                            <span class="help"> e.g. "George deo"</span>
+                        </label>
+                        <input class="form-control form-control-line" asp-for="@Model.Country10">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            11. Telephone Number:
+                            <span class="help"> e.g. "George deo"</span>
+                        </label>
+                        <input class="form-control form-control-line" asp-for="@Model.Phone11">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            12. Mobile Phone Number:
+                            <span class="help"> e.g. "George deo"</span>
+                        </label>
+                        <input class="form-control form-control-line" asp-for="@Model.MobilePhone12">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            13. Please provide the Foreign National’s
+                            PPS Number if available:
+                            <span class="help"> e.g. "George deo"</span>
+                        </label>
+                        <input class="form-control form-control-line" asp-for="@Model.PPSNumber13">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            14. Number of EEA* and/or Swiss
+                            nationals (including Irish) currently
+                            employed by the Person who has
+                            made the offer of employment:
+                            <span class="help"> e.g. "George deo"</span>
+                        </label>
+                        <input class="form-control form-control-line" asp-for="@Model.Email14">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            15. Is the Foreign National currently in the
+                            State?:
+                            <span class="help"> e.g. "George deo"</span>
+                        </label>
+                        <input class="form-control form-control-line" asp-for="@Model.ForeignNational15">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            16. Highest level of Qualification relevant
+                            to the employment: e.g. Certificate,
+                            Diploma, Degree, etc.:
+                            <span class="help"> e.g. "George deo"</span>
+                        </label>
+                        <input class="form-control form-control-line" asp-for="@Model.HighestLevel16">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            17. Has the Foreign National previously
+                            made an application for asylum in the
+                            State?:
+                            <span class="help"> e.g. "George deo"</span>
+                        </label>
+                        <input class="form-control form-control-line" asp-for="@Model.ForeignNational17">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            18. Has the Foreign National sought
+                            permission to land in the State on a
+                            previous occasion?:
+                            <span class="help"> e.g. "George deo"</span>
+                        </label>
+                        <input class="form-control form-control-line" asp-for="@Model.ForeignNational18">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            19. Has the Foreign National been in the
+                            State on a previous occasion without
+                            permission?:
+                            <span class="help"> e.g. "George deo"</span>
+                        </label>
+                        <input class="form-control form-control-line" asp-for="@Model.ForeignNational19">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            20. Is the Foreign National currently
+                            employed in the State?:
+                            <span class="help"> e.g. "George deo"</span>
+                        </label>
+                        <input class="form-control form-control-line" asp-for="@Model.ForeignNational20">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            21. Has the Foreign National been
+                            employed in the State previously?:
+                            <span class="help"> e.g. "George deo"</span>
+                        </label>
+                        <input class="form-control form-control-line" asp-for="@Model.ForeignNational21">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            22. Is the Foreign National married to, or in
+                            a civil partnership with, an Irish or EEA
+                            national?:
+                            <span class="help"> e.g. "George deo"</span>
+                        </label>
+                        <input class="form-control form-control-line" asp-for="@Model.ForeignNational22">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            23. Is the Foreign National the spouse,
+                            civil partner or the dependant of, the
+                            holder of an Employment Permit or the
+                            holder of any other type of permission
+                            to work in the State?:
+                            <span class="help"> e.g. "George deo"</span>
+                        </label>
+                        <input class="form-control form-control-line" asp-for="@Model.ForeignNational23">
+                    </div>
+
+                    <input type="submit" class="btn btn-success" value="Next (4/6)" />
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
